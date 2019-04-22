@@ -39,7 +39,6 @@
     <?php if ($this->getCount()): ?>
         <?php $elementId = uniqid('onilab_googlechart_dashboard_graph_') ?>
         <p id="<?php echo $elementId ?>" style="<?php echo $_containerStyle ?>"></p>
-        <span style="text-align: center; display: block"><?php echo $this->__('Check for updates at ') ?> <a href="https://github.com/onilab/magento-1-google-api-chart-fix" target="_blank">GitHub</a></span>
         <script type="application/javascript">
             <?php list($datas, $dateList) = $this->getChartData() ?>
             <?php
@@ -81,7 +80,7 @@
                     height: <?php echo $this->getHeight() ?>,
                     colors: ['#EA7601', 'red'],
                     legend: 'none',
-                    chartArea: {width: '90%', height: '80%'},
+                    chartArea: {width: '85%', height: '80%'},
                     vAxis: {
                         gridlines: {color: '#e6e6e6'},
                         baselineColor: '#e6e6e6',
